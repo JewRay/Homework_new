@@ -1,4 +1,4 @@
-package pro.sky.java.course1.lesson12;
+package pro.sky.java.course1.lesson12_13;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,6 +25,43 @@ public class Main {
         System.out.println("Название книги : " + book1.getTitle());
         System.out.println("Автор книги : " + book1.getAuthor().getName() + " " + book1.getAuthor().getSurname());
         System.out.println("Год публикации : " + book1.getPublishingYear());
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+        System.out.println("toString");
+
+        System.out.println(book1.toString());
+        System.out.println(book2.toString());
+
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("equals");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+        if(book1.equals(book2)){
+            System.out.println("равны");
+        }else {
+            System.out.println("не равны");
+        }
+
+        Book book3 = new Book("Life to game", new Author("Dmitriy", "Rus"), 2013);
+
+        if(book2.equals(book3)){
+            System.out.println("равны");
+        }else {
+            System.out.println("не равны");
+        }
+
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("hashCode");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+
+        System.out.println(author1.hashCode());
+        System.out.println(author2.hashCode());
+        System.out.println(book1.hashCode());
+        System.out.println(book2.hashCode());
+        System.out.println(book3.hashCode());
+
+
 
     }
 }
+
